@@ -29,16 +29,16 @@ getgenv().petsGoConfig = {
       CELESTIAL_MINING_CHEST = 5, RUNIC_MINING_CHEST = 5,
       CELESTIAL_ENCHANT_SAFE = 1,
     }, 
-    USERNAME_TO_MAIL = {"KeithTommyk22",
-	"WongMegana93",
-	"HartmanCesarj4188",
-	"CarterJuant1090",
-	"SellersSaraho5",
-	"CombsChristiner770",
-	"MaynardMitchellz4",
-	"GilmoreAshleym7",
-	"FrankSheliao4",
-	"SeashellKendraa98"} -- Mail Pet To Username
+    USERNAME_TO_MAIL = {"OsbornRhondav4",
+	"MurilloDarlenet71",
+	"SheaStaceyr1155",
+	"GeorgeNicolet7131",
+	"PalmerAlexp740",
+	"NortonLeviw1653",
+	"HarrisCodyq300",
+	"BauerKristinah215",
+	"GillMackenziex2780",
+	"SwansonYolandap78"} -- Mail Pet To Username
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e81ea00ef49a917bb1242da4f41dc4f9.lua"))()
