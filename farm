@@ -1,36 +1,207 @@
-getgenv().petsGoConfig = {
-    CONSUME_CORRUPTED_HUGE_BAIT = true,
-    CONSUME_ALL_ENCHANT_SAFE = true,
-    CONSUME_ALL_MINING_CHEST = true,
-    CONSUME_EVENT_GIFT_BAG = false,
-    CONSUME_EVENT_EGG = false, -- Hype eggs not included
+getgenv().ConfigsKaitun = {
+	["Block Pet Gift"] = true,
+	
+	["Low Cpu"] = true,
+	["Auto Rejoin"] = true,
+	
+	["Rejoin When Update"] = false,
+	["Limit Tree"] = {
+		["Limit"] = 255,
+		["Destroy Untill"] = 250,
 
-	WEBHOOK_URL = "https://discord.com/api/webhooks/1337101823164813487/N8iUDXw5a8Sobh-gmYxkdIp7xY7zJmbKFB7p0rfwfN6dEgeHYZSFqrxQ1w7icFmoroaK",
-    MAILING_WEBHOOK_URL = "https://discord.com/api/webhooks/1324032537131221085/uWdtrXQXV2ZbpdZrsQqnOSY7N0h6T0lrPJU3RDvDyrI-5jrYLbAikhAMMKlrTYxAOX-6",
-    DISCORD_ID = "872808640212512808",  -- Required!!! (For public-webhook)
-    WEBHOOK_ODDS = 1000000000, -- Minimum Pet Odds To Trigger Webhook
+		["Safe Tree"] = {
+			"Moon Blossom",
+		}
+	},
 
-    DIAMOND_EGG = true,  -- true = Diamond Egg, false = F2P Egg
-    MINE_ALL_ORES = true,  -- true = all ore, false = runic & event ore
+	Seed = {
+		Buy = {
+			Mode = "Auto", -- Custom , Auto
+			Custom = {
+			}
+		},
+		Place = {
+			Mode = "Lock", -- Select , Lock
+			Select = {
+			},
+			Lock = {
+			}
+		}
+	},
 
-    PICKAXE_ENCHANTS = {"Speed", "Strength", "Huges"},
-    
-    MAILING = true,  -- Auto mail
-    MAIL_FISHING_ROD = false,  -- true = mail, false = keep fishing rod on account (FASTER Fishing)
-    MAIL_WEBHOOK_ODDS = 1000000000, -- Minimum Pet Odds To Trigger MAIL Webhook
-    MAIL_PET_ODDS = 500000000,  -- Minimum Pet Odds To Mail
-    MAIL_GEMS_MIN = 1,  -- Minimum Gems to mail out
-    MIN_MAIL_AMOUNT = {  -- Rare items not listed, default min 1
-      -- General
-      INSTA_POTION_IV = 5,
-      CORRUPTED_HUGE_BAIT = 20,
-      CRYSTAL_KEY = 5, CRYSTAL_KEY_UPPER_HALF = 20, CRYSTAL_KEY_LOWER_HALF = 20,
-      EXCLUSIVE_TREASURE_CHEST = 5, ABYSSAL_TREASURE_CHEST = 5,
-      CELESTIAL_MINING_CHEST = 5, RUNIC_MINING_CHEST = 5,
-      CELESTIAL_ENCHANT_SAFE = 1,
-    }, 
-    USERNAME_TO_MAIL = {"AdrianAdams10371",
-	"TriciaStewart9"} -- Mail Pet To Username
+	["Seed Pack"] = {
+		Locked = {
+
+		}
+	},
+
+	Events = {
+		["Zen Event"] = {
+			["Restocking"] = { -- Minimumthing to restock
+				Max_Restocks_Price = 100_000_000,
+				Minimum_Money = 10_000_000,
+				Minimum_Chi = 50
+			},
+			["Doing"] = {
+				Minimum_Money = 1_000_000, -- minimum money to start play this event
+				First_Upgrade_Tree = 4,
+				Maximum_Chi = 90,
+			}
+		},
+		["Traveling Shop"] = {
+			"Bee Egg",
+		},
+		Craft = {
+			"Ancient Seed Pack",
+			"Anti Bee Egg",
+			"Primal Egg",
+		},
+		Shop = {
+			"Zen Egg",
+			"Night Egg",
+			"Bug Egg",
+			"Mythical Egg",
+		},
+	},
+
+	Gear = {
+		Buy = { 
+			"Master Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
+			"Lightning Rod",
+			"Level Up Lollipop",
+			"Medium Treat",
+			"Medium Toy",
+		},
+		Lock = {
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
+		},
+	},
+
+	Eggs = {
+		Place = {
+			"Zen Egg",
+			"Primal Egg",
+			"Dinosaur Egg",
+			"Oasis Egg",
+			"Anti Bee Egg",
+			"Night Egg",
+			"Bug Egg",
+			"Paradise Egg",
+			"Bee Egg",
+			"Mythical Egg",
+		},
+		Buy = {
+			"Bee Egg",
+			"Oasis Egg",
+			"Paradise Egg",
+			"Anti Bee Egg",
+			"Night Egg",
+			"Rare Summer Egg",
+			"Bug Egg",
+			"Mythical Egg",
+			"Common Egg",
+		}
+	},
+
+	Pets = {
+		["Start Delete Pet At"] = 40,
+		["Upgrade Slot"] = {
+			["Pet"] = {
+				["Starfish"] = { 8, 100, 1 },
+			},
+			["Limit Upgrade"] = 2,
+			["Equip When Done"] = {
+				["Seal"] = { 8, 70, 1 }, -- 1 mean equip only 1 pet , 70 mean equip only level pet lower than 70 the one on the last mean first priority will ues first if possible 
+				["Koi"] = { 1, 70 },
+				["Tanuki"] = { 1, 70 },
+				["Tanchozuru"] = { 1, 70 },
+				["Kappa"] = { 1, 70 },
+				["Kitsune"] = { 1, 70 },
+				["Dilophosaurus"] = { 1, 70 },
+				["Moon Cat"] = { 1, 70 },
+				["Capybara"] = { 1, 70 },
+				["Spinosaurus"] = { 1, 70 },
+				["Bear Bee"] = { 1, 70 },
+				["T-Rex"] = { 1, 70 },
+				["Brontosaurus"] = { 1, 70 },
+				["Disco Bee"] = { 1, 70 },
+				["Butterfly"] = { 1, 70 },
+				["Queen Bee"] = { 1, 70 },
+				["Dragonfly"] = { 1, 70 },
+				["Raccoon"] = { 1, 70 },
+				["Fennec Fox"] = { 1, 70 },
+				["Mimic Octopus"] = { 1, 70 },
+				["Red Fox"] = { 1, 70 },
+				["Blood Owl"] = { 8, 70 , 2 },
+			},
+		},
+		Locked = {
+			"Koi",
+			"Tanuki",
+			"Tanchozuru",
+			"Kappa",
+			"Kitsune",
+			"Dilophosaurus",
+			"Moon Cat",
+			"Capybara",
+			"Spinosaurus",
+			"Bear Bee",
+			"T-Rex",
+			"Brontosaurus",
+			"Disco Bee",
+			"Butterfly",
+			"Queen Bee",
+			"Dragonfly",
+			"Raccoon",
+			"Fennec Fox",
+			"Mimic Octopus",
+			"Red Fox",
+			"Blood Owl",
+			["Starfish"] = 10,
+		},
+		LockPet_Weight = 7, -- if Weight >= 10 they will locked,
+		Instant_Sell = {		
+			"Shiba Inu",
+			"Dog",
+			"Golden Lab",
+			"Bunny",
+		}
+	},
+
+	Webhook = {
+		UrlPet = "https://discord.com/api/webhooks/1193532253406507049/wVgjJqtJ9xqUoiI6Glp0hZgo6oYtvn0bF-LXgDwHurO7jP3svdUI8mYO8xwZDKkIy8kC",
+		UrlSeed = "xxx",
+		PcName = "home pc",
+
+		Noti = {
+			Seeds = {
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
+			},
+			SeedPack = {
+				"Idk"
+			},
+			Pets = {
+				"Disco Bee",
+				"Butterfly",
+				"Mimic Octopus",
+				"Queen Bee",
+				"Dragonfly",
+				"Raccoon",
+				"T-Rex",
+				"Kitsune",
+				"Red Fox",
+				"Kappa",
+			},
+			Pet_Weight_Noti = true,
+		}
+	},
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e81ea00ef49a917bb1242da4f41dc4f9.lua"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
