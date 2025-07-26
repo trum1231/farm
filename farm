@@ -198,6 +198,7 @@ getgenv().ConfigsKaitun = {
 				"Kitsune",
 				"Red Fox",
 				"Kappa",
+			        "Koi",
 			},
 			Pet_Weight_Noti = true,
 		}
